@@ -5,7 +5,7 @@ var createError = require('http-errors')
 var cookieParser = require('cookie-parser')
 var logger = require('morgan')
 var dev = process.env.NODE_ENV === 'development'
-const PORT = 5000;
+const PORT = 3000;
 const HOST = '0.0.0.0';
 const app = express();
 
@@ -15,7 +15,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
 app.use(cors({
-  origin: 'http://localhost:3000'
+  origin: 'http://localhost:5000'
 }));
 
 // Routes
