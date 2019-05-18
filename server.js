@@ -22,15 +22,6 @@ app.use(cors({
 app.use('/', require('./routes/index'))
 app.use('/beta-email-signup', require('./routes/beta-email-signup'))
 
-// app.get('/api', (req, res) => {
-//   res.json({ a: 1 });
-// });
-//
-// // catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//   next(createError(404));
-// });
-
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
