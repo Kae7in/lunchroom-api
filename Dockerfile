@@ -6,6 +6,7 @@ COPY package*.json ./
 
 RUN npm install
 RUN export NODE_ENV=development
+RUN npm i --S mongodb
 
 COPY . .
 
